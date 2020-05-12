@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CashifyLoginTest(failed)">
+    <parameter name="password" value="Test@123"/>
+    <parameter name="errorMessage" value="Username or password is invalid"/>
+    <parameter name="emailId" value="testUserABMAdmin123@getnada.com"/>
+    <parameter name="LoggedInSuccessfully" value="Welcome to the"/>
+    <classes>
+      <class name="saurabh.CashifyTest.LoginPageTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="beforeClass"/>
+          <include name="CloseTheApp"/>
+          <include name="beforeMethod"/>
+          <include name="logingIntoApp" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="DashboardClickItems"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- saurabh.CashifyTest.LoginPageTest -->
+    </classes>
+  </test> <!-- CashifyLoginTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

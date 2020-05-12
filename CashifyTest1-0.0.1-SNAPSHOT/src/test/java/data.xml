@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+  <test name="CashifyLoginTest">
+   		<parameter name="emailId" value="testUserABMAdmin123@getnada.com"></parameter>
+		<parameter name="password" value="Test@123"></parameter>
+		<parameter name="LoggedInSuccessfully" value="Welcome to the"></parameter>
+		<parameter name="errorMessage" value="Username or password is invalid"></parameter>
+      <classes>
+       <class name="saurabh.CashifyTest.LoginPageTest"/>
+        </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
